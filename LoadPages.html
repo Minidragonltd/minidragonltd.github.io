@@ -18,13 +18,13 @@
                 var queries = queryString.split("&");
                 for (var i = 0; i < queries.length; i++)
                 {
-                  document.write(queries[i] + "<br>");
+                    document.write(queries[i]);
+                    Unity.call(queries[i]); 
                 }
                 
                 //document.body.style.backgroundColor = 'black';
-                //Unity.call('shop' ); 
                 //LoadBack
-                //history.back();
+                history.back();
                 return false;
             },
             2000);
