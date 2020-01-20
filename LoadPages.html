@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Unity WebView</title>
+  </head>
+  <body onload="Unity.call('shop');">
+<p id="demo"></p>
+<script>
+      
+      window.addEventListener(
+    'load',
+    function() {
+        window.setTimeout(
+            function() {
+                //document.body.style.backgroundColor = 'black';
+                //Unity.call('shop' ); 
+                //LoadBack
+                history.back();
+                return false;
+            },
+            2000);
+    });
+</script>
+      
+  </body>
+</html>
